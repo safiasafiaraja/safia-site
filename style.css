@@ -1,8 +1,8 @@
-/* الخلفية بالصورة */
+/* Arrière-plan */
 body {
   margin: 0;
   padding: 0;
-  height: 100vh;
+  min-height: 100vh;
   background: url("raja-bg.png") no-repeat center center;
   background-size: cover;
   display: flex;
@@ -11,25 +11,25 @@ body {
   font-family: Arial, sans-serif;
 }
 
-/* طبقة شفافة فوق الخلفية */
+/* Couche semi-transparente */
 .overlay {
-  background-color: rgba(0, 0, 0, 0.6); /* أسود نصف شفاف */
+  background-color: rgba(0, 0, 0, 0.6);
   padding: 40px;
   border-radius: 15px;
   text-align: center;
   color: white;
-  max-width: 800px;
+  max-width: 900px;
   width: 90%;
 }
 
-/* العنوان */
+/* Header */
 header h1 {
   margin-bottom: 20px;
   font-size: 32px;
   color: #00ff88;
 }
 
-/* المنتجات */
+/* Produits */
 .cards {
   display: flex;
   justify-content: center;
@@ -50,4 +50,30 @@ header h1 {
 .card img {
   width: 100%;
   border-radius: 8px;
+}
+
+/* Formulaire de commande */
+.card form {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.card form input, .card form button {
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.card form button {
+  background-color: #00ff88;
+  border: none;
+  color: black;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.card form button:hover {
+  background-color: #00cc66;
 }
